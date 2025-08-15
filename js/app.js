@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Make loadChapter a global function by attaching it to the window object
     window.loadChapter = async (file, updateHistory = true) => {
-        // Normalize the file path
-        const normalizedFile = file.startsWith('/') ? file : `/${file}`;
+        // This is the key change: remove the absolute path logic
+        const normalizedFile = file;
         currentPath = normalizedFile;
         try {
             const response = await fetch(normalizedFile);
@@ -123,7 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load the TOC from the JSON file
     window.loadTOC = async () => {
         try {
-            const response = await fetch('/contents.json');
+            // This is another key change: use a relative path
+            const response = await fetch('contents.json');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -141,7 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.href = '#';
                 link.textContent = getTitleFromFilePath(item.file);
                 link.className = "block px-4 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200";
-                link.dataset.filePath = `/${item.file}`; // Store the file path for history API
+                // This is the final change: use the relative path for the data attribute
+                link.dataset.filePath = `${item.file}`; // Store the file path for history API
                 
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -164,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const chevron = document.createElement('span');
                 chevron.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform" viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                      </svg>`;
+                                     </svg>`;
                 parentHeader.appendChild(chevron);
                 
                 const subList = document.createElement('ul');
@@ -182,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     link.textContent = getTitleFromFilePath(chapter.file);
 
                     link.className = "block px-4 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200";
-                    link.dataset.filePath = `/${chapter.file}`; // Store the file path for history API
+                    link.dataset.filePath = `${chapter.file}`; // Store the file path for history API
                     
                     link.addEventListener('click', (e) => {
                         e.preventDefault();
