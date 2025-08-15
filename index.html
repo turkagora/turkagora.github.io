@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel= "stylesheet" href= "css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Chapters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- H5P scripts for interactive content -->
+    <script src="https://h5p.org/h5p/core/js/h5p-init.js"></script>
+    <script src="https://h5p.org/h5p/core/js/h5p.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://h5p.org/h5p/core/styles/h5p.css">
+
+</head>
+<body class="flex flex-col min-h-screen">
+    
+    <!-- Placeholder for the header -->
+    <div id="header-placeholder"></div>
+
+    <div class="flex flex-1">
+        <!-- Placeholder for the sidebar -->
+        <aside class="w-64 bg-gray-800 text-white shadow-lg p-6 flex flex-col min-h-full">
+            <nav id="toc-sidebar" class="space-y-4 flex-1 overflow-y-auto"></nav>
+        </aside>
+
+        <!-- Main content of the page -->
+        <main class="flex-1 p-8 md:p-12 lg:p-16 bg-white overflow-y-auto">
+            <article id="main-content" class="max-w-4xl mx-auto prose lg:prose-xl">
+                <!-- Initial content for the home page will be loaded here by app.js -->
+                <p>Welcome! Select a chapter from the sidebar to begin.</p>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts to load dynamic content -->
+    <script src="js/night.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
