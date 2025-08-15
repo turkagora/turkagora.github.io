@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Make loadChapter a global function by attaching it to the window object
     window.loadChapter = async (file, updateHistory = true) => {
-        // This is the key change: remove the absolute path logic
-        const normalizedFile = file;
+        // Corrected line: removed the absolute path conversion
+        const normalizedFile = file; 
         currentPath = normalizedFile;
         try {
             const response = await fetch(normalizedFile);
@@ -106,8 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const folderGroups = {};
         files.forEach(item => {
             const pathParts = item.file.split('/');
-            // A file is considered a "root" file if its path has only two parts: 'content' and 'filename.html'
-            if (pathParts.length === 2) {
+            // This is still incorrect for `content/file.html` as it would be considered a root file
+            // Let's assume the root files are those without a '/' in their path
+            if (!item.file.includes('/')) {
                 rootFiles.push(item);
             } else {
                 const folderName = pathParts[pathParts.length - 2];
@@ -205,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Check if a specific chapter is requested via URL
             const urlPath = window.location.pathname;
             const requestedFile = contents.find(item => `/${item.file}` === urlPath);
-            const aboutPage = `/content/a_propos.html`;
+            const aboutPage = `header/À%20propos.html`;
             
             if (urlPath === aboutPage) {
                 loadChapter(aboutPage, false);
