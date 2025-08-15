@@ -3,7 +3,7 @@
 
 async function loadHeader() {
     const headerPlaceholder = document.getElementById('header-placeholder');
-    const headerContentPath = '/header.html'; // Use a root-relative path
+    const headerContentPath = 'header.html'; // Use a relative path
 
     if (!headerPlaceholder) {
         console.error('Element with ID "header-placeholder" not found.');
