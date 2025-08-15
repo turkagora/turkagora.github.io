@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <script type="text/javascript">
+        // This script redirects all 404 pages back to the main index.
+        // The main index.html file will then use JavaScript to load the correct content.
+        var pathSegments = location.pathname.split('/');
+        pathSegments.pop();
+        var newPath = pathSegments.join('/') + '/index.html' + location.hash;
+        location.replace(newPath);
+    </script>
+</head>
+<body>
+</body>
+</html>
