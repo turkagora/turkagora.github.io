@@ -1,0 +1,51 @@
+/* styles.css */
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7fafc;
+    color: #1a202c;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark {
+    background-color: #1a202c;
+    color: #f7fafc;
+}
+
+body.dark .bg-white {
+    background-color: #2d3748;
+}
+
+body.dark .text-gray-700 {
+    color: #a0aec0;
+}
+
+body.dark #main-content h1,
+body.dark #main-content h2,
+body.dark #main-content h3 {
+    color: #fcd34d; /* Light yellow for headings in dark mode */
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #cbd5e0;
+    border-radius: 10px;
+}
+
+body.dark ::-webkit-scrollbar-track {
+    background: #4a5568;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a0aec0;
+    border-radius: 10px;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+}
