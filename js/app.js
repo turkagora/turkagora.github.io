@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tocSidebar = document.getElementById('toc-sidebar');
     const mainContent = document.getElementById('main-content');
     let h5pInstances = []; // To keep track of H5P instances for cleanup
-    let currentPath = window.location.pathname; // Store the current path
-
+    
     // Function to load and render H5P content
     const renderH5pContent = () => {
         h5pInstances.forEach(instance => instance.remove());
@@ -44,9 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Make loadChapter a global function by attaching it to the window object
     window.loadChapter = async (file, updateHistory = true) => {
-        // Normalize the file path
         const normalizedFile = file;
-        currentPath = normalizedFile;
         try {
             const response = await fetch(normalizedFile);
             if (!response.ok) {
@@ -73,12 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.state && event.state.path) {
             loadChapter(event.state.path, false);
         } else {
-            loadTOC().then(() => {
-                const firstChapter = document.querySelector('#toc-sidebar a[data-file-path]');
-                if (firstChapter) {
-                    loadChapter(firstChapter.dataset.filePath, false);
-                }
-            });
+            // Fallback to loading the first chapter
+            const firstChapter = document.querySelector('#toc-sidebar a[data-file-path]');
+            if (firstChapter) {
+                loadChapter(firstChapter.dataset.filePath, false);
+            }
         }
     };
 
@@ -111,7 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load the TOC from the JSON file
     window.loadTOC = async () => {
         try {
-            // Use a relative path
             const response = await fetch('contents.json');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -130,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.href = '#';
                 link.textContent = getTitleFromFilePath(item.file);
                 link.className = "block px-4 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200";
-                link.dataset.filePath = `${item.file}`; // Store the file path for history API
+                link.dataset.filePath = `${item.file}`;
                 
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -171,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     link.textContent = getTitleFromFilePath(chapter.file);
 
                     link.className = "block px-4 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200";
-                    link.dataset.filePath = `${chapter.file}`; // Store the file path for history API
+                    link.dataset.filePath = `${chapter.file}`;
                     
                     link.addEventListener('click', (e) => {
                         e.preventDefault();
@@ -189,10 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
             tocSidebar.appendChild(tocList);
             
             const urlPath = window.location.pathname.replace(/\/$/, '');
-            const requestedFile = contents.find(item => `/${item.file}` === urlPath || `${item.file}` === urlPath);
+            const requestedFile = contents.find(item => urlPath.endsWith(item.file));
             const aboutPage = `content/a_propos.html`;
             
-            if (urlPath.includes(aboutPage)) {
+            if (urlPath.endsWith(aboutPage)) {
                 loadChapter(aboutPage, false);
             } else if (requestedFile) {
                 loadChapter(requestedFile.file, false);
