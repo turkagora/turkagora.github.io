@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Make loadChapter a global function by attaching it to the window object
     window.loadChapter = async (file, updateHistory = true) => {
-        // Corrected line: removed the absolute path conversion
-        const normalizedFile = file; 
+        // Normalize the file path
+        const normalizedFile = file.startsWith('/') ? file : `/${file}`;
         currentPath = normalizedFile;
         try {
             const response = await fetch(normalizedFile);
@@ -106,9 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const folderGroups = {};
         files.forEach(item => {
             const pathParts = item.file.split('/');
-            // This is still incorrect for `content/file.html` as it would be considered a root file
-            // Let's assume the root files are those without a '/' in their path
-            if (!item.file.includes('/')) {
+            // A file is considered a "root" file if its path has only two parts: 'content' and 'filename.html'
+            if (pathParts.length === 2) {
                 rootFiles.push(item);
             } else {
                 const folderName = pathParts[pathParts.length - 2];
@@ -124,8 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load the TOC from the JSON file
     window.loadTOC = async () => {
         try {
-            // This is another key change: use a relative path
-            const response = await fetch('contents.json');
+            const response = await fetch('/contents.json');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -143,8 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.href = '#';
                 link.textContent = getTitleFromFilePath(item.file);
                 link.className = "block px-4 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200";
-                // This is the final change: use the relative path for the data attribute
-                link.dataset.filePath = `${item.file}`; // Store the file path for history API
+                link.dataset.filePath = `/${item.file}`; // Store the file path for history API
                 
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -167,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const chevron = document.createElement('span');
                 chevron.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform" viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                     </svg>`;
+                                      </svg>`;
                 parentHeader.appendChild(chevron);
                 
                 const subList = document.createElement('ul');
@@ -185,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     link.textContent = getTitleFromFilePath(chapter.file);
 
                     link.className = "block px-4 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white rounded-md transition-colors duration-200";
-                    link.dataset.filePath = `${chapter.file}`; // Store the file path for history API
+                    link.dataset.filePath = `/${chapter.file}`; // Store the file path for history API
                     
                     link.addEventListener('click', (e) => {
                         e.preventDefault();
@@ -206,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Check if a specific chapter is requested via URL
             const urlPath = window.location.pathname;
             const requestedFile = contents.find(item => `/${item.file}` === urlPath);
-            const aboutPage = `header/À%20propos.html`;
+            const aboutPage = `./header/a_propos.html`;
             
             if (urlPath === aboutPage) {
                 loadChapter(aboutPage, false);
