@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Make loadChapter a global function by attaching it to the window object
     window.loadChapter = async (file, updateHistory = true) => {
         // Normalize the file path
-        const normalizedFile = file.startsWith('/') ? file : `/${file}`;
+        const normalizedFile = file.replace(/^\/+/, '');
         currentPath = normalizedFile;
         try {
             const response = await fetch(normalizedFile);
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load the TOC from the JSON file
     window.loadTOC = async () => {
         try {
-            const response = await fetch('/contents.json');
+            const response = await fetch('./contents.json');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -228,3 +228,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start the process by loading the TOC
     loadTOC();
 });
+
