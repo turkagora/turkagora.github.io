@@ -1,5 +1,5 @@
 - [Home](/)
-- [Guide](docs/guide)
+- [Guide](/docs/guide)
 - About
-  - [About Us](about)
-  - [Contact](contact)
+  - [About Us](/about)
+  - [Contact](/contact)
