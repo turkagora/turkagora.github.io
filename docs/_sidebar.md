@@ -1,6 +1,6 @@
 <!-- markdownlint-disable first-line-h1 -->
 
-- [Home](docs)
+- [Home](README)
 - [Guide](guide)
 - About
   - [About Us](about)
