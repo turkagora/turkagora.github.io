@@ -1,11 +1,11 @@
-- [Home](./)
-- [Guide](./docs/guide)
+- [Home](/)
+- [Guide](docs/guide)
 - 
 
 
 
 
 - About
-  - [About Us](./about)
+  - [About Us](about)
 
-  - [Contact](./contact)
+  - [Contact](contact)
