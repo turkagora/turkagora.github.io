@@ -1,5 +1,21 @@
 /* css/index.css */
 
+#docsify-darklight-theme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.docsify-darklight-theme-toggle {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: block !important; /* force it to show */
+  opacity: 1 !important;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .theme-toggle-container {
