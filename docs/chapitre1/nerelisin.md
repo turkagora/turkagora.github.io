@@ -6,7 +6,7 @@ En Turquie, la plupart des conversations commencent par une question simple : *_
 
 C’est donc par cette question que nous allons aborder le thème de ce chapitre : se présenter. Mais plutôt que de commencer par le classique « Bonjour, je m’appelle… », nous allons apprendre tout de suite à dire « Je viens de… ». C’est une manière bien plus vivante et naturelle de lancer une conversation.
 
-Comme évoqué précédemment dans [La vue d'ensemble de la langue turque](dersler/vue_densemble), les suffixes permettent d’exprimer de nombreuses choses, y compris la conjugaison du verbe être au présent. C’est ce qui va nous servir à dire dans cette page à dire: *Je suis français, turc, parisien, stambouliote, etc.*
+Comme évoqué précédemment dans [La vue d'ensemble de la langue turque](vue_densemble), les suffixes permettent d’exprimer de nombreuses choses, y compris la conjugaison du verbe être au présent. C’est ce qui va nous servir à dire dans cette page à dire: *Je suis français, turc, parisien, stambouliote, etc.*
 
 Commençons par la prononciation de notre question *__« nerelisin? »__* :
 
