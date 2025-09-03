@@ -35,24 +35,22 @@
       subMaxLevel: 3,
       autoHeader: true,
       coverpage: true,
-
       search: {
         placeholder: 'Rechercher...',
         noData: 'Aucun résultat trouvé',
         depth: 3
       },
-
-
       plugins: [
-        function(hook) {
+        function(hook, vm) {
           hook.ready(function() {
+            // Add footer
             const footer = document.createElement('div');
             footer.className = 'footer';
             footer.innerHTML = `
               <p>TürkoFil &copy; ${new Date().getFullYear()} | Documentation Technique</p>
               <p>Version 1.0.0</p>
             `;
-            document.querySelector('.content')?.appendChild(footer);
+            document.querySelector('.content').appendChild(footer);
           });
         }
       ]
