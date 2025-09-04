@@ -26,6 +26,10 @@
   justify-content: center;     /* center vertically if needed */
 }
 
+body.dark-mode ::selection {
+  background: #64b5f6; /* your accent blue */
+  color: #121212;      /* dark text for readability */
+}
 
 body.dark-mode strong,
 body.dark-mode b {
@@ -163,3 +167,4 @@ body.dark-mode .footer {
   --border-color: #2a2a2a;
   --footer-color: #aaa;
 }
+
