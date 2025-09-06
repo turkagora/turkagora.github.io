@@ -1,5 +1,7 @@
 # 🌍 Le turc : une langue mondiale
 
+> Türk diline genel bakış.
+
 ## Où parle-t-on le turc ?
 
 Quand on pense au turc, on pense immédiatement à la Turquie, bien sûr.  
