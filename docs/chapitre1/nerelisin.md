@@ -24,17 +24,18 @@ Qeulques autres réponses possibles:
 - İngiliz*im*
 - Alman*ım*
 - Rus*um*
+
 Vous avez sûrement reconnu certaines nationalités dans ces mots – mais alors, à quoi correspondent les suffixes à la fin ?
 
 Et bien, c’est tout simplement la façon de dire « Je suis » en turc !
 
-C’est un peu comme en anglais : on dit "I’m", avec juste deux lettres, n’est-ce pas ?
-En turc, c’est pareil : on ajoute aussi deux petites lettres.
+C’est un peu comme en anglais : on dit *__« I'm »__*, avec juste deux lettres, n’est-ce pas ?
+En turc, c’est pareil : **on ajoute aussi deux petites lettres.**
 
 Sans rentrer tout de suite dans les détails, on va d’abord essayer de vous faire sentir comment ces suffixes fonctionnent. On expliquera la grammaire plus en détail dans le prochain cours.
 
 Pour l’instant, amusons-nous à deviner quelques nationalités. 👇
-Écrivez-les au masculin car en turc, il n’y a pas de distinction de genre, tout est neutre.
+**Écrivez-les au masculin car en turc, il n’y a pas de distinction de genre, tout est neutre.**
 <iframe src="h5p/nationalites.html" style="width: 100%; height: 800px; border: none; display: block;" scrolling="no" frameborder="0" allowfullscreen ></iframe>
 
 
