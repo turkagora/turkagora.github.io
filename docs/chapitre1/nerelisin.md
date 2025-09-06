@@ -14,6 +14,24 @@ Commençons par la prononciation de notre question *__« nerelisin? »__* :
 <iframe src="h5p/nerelisin.html" style="width: 100%; height: 90px; border: none; display: block;" scrolling="no" frameborder="0" allowfullscreen ></iframe>
 
 
-Et tout de suite je vous donne la répose pour moi-même:
+Et tout de suite je vous donne la répose pour moi-même: Türk*üm*
 
 <iframe src="h5p/turkum.html" style="width: 100%; height: 90px; border: none; display: block;" scrolling="no" frameborder="0" allowfullscreen ></iframe>
+
+Qeulques autres réponses possibles:
+
+Fransız*ım*
+İngiliz*im*
+Alman*ım*
+Rus*um*
+
+Vous avez probablement reconnu les nationalités utilisées ici. Mais c'est quoi alors les suffixes à la fin de chaque mot? Voilà c'est comment on dit *__« Je suis »__* en turc.
+
+C'est un peu comme en anglais. Là nous disons I'm, deux lettres I et M, non?
+
+Nous aussi utilisons deux lettres. Pour l'instant sans beaucoup expliquer la logique nous allons essayer de vous faire sentir la nature de ce suffixe et dans le cours prochain de ce chapitre nous allons aborder le sujet du verbe être plus en détail.
+
+<iframe src="h5p/nationalites.html" style="width: 100%; height: 90px; border: none; display: block;" scrolling="no" frameborder="0" allowfullscreen ></iframe>
+
+
+
