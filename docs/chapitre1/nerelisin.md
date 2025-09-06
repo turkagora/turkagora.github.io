@@ -20,10 +20,10 @@ Et tout de suite je vous donne la répose pour moi-même: Türk*üm*
 
 Qeulques autres réponses possibles:
 
-Fransız*ım*
-İngiliz*im*
-Alman*ım*
-Rus*um*
+- Fransız*ım*
+- İngiliz*im*
+- Alman*ım*
+- Rus*um*
 Vous avez sûrement reconnu certaines nationalités dans ces mots – mais alors, à quoi correspondent les suffixes à la fin ?
 
 Et bien, c’est tout simplement la façon de dire « Je suis » en turc !
