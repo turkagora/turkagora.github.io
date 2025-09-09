@@ -39,4 +39,98 @@ Pour l’instant, amusons-nous à deviner quelques nationalités. 👇
 <iframe src="h5p/nationalites.html" style="width: 100%; height: 900px; border: none; display: block;" scrolling="no" frameborder="0" allowfullscreen ></iframe>
 
 
+> En turc, il y a deux façons de former une nationalité :
 
+###1. Avec un mot spécial (adjectif)
+
+Certains pays ont un mot spécifique pour dire la nationalité comme on vient de voir au-dessus aussi:
+
+Fransa → Fransız (Français)
+
+Almanya → Alman (Allemand)
+
+İspanya → İspanyol (Espagnol)
+
+Ici, il n'y a pas de règle spécifique mais il y a un mot spécial pour chacune des nationalités.
+
+###2. Avec le nom du pays + un suffixe
+
+Pour beaucoup d’autres pays, on prend simplement le nom du pays et on ajoute un suffixe (généralement -lı / -li / -lu / -lü selon l’harmonie vocalique) :
+
+Amerika → Amerikalı (Américain)
+
+Çin → Çinli (Chinois)
+
+Fas → Faslı (Marocain)
+
+Suriye → Suriyeli (Syrien)
+
+Irak → Iraklı (Irakien)
+
+Mısır → Mısırlı (Égyptien)
+
+Ukrayna → Ukraynalı (Ukrainien)
+
+## **Plus de nationalités en turc**
+
+Deux catégories : **mot spécifique** (adjectif qui change) ou **pays + suffixe** (`-lı/-li/-lu/-lü`).
+
+| Pays (turc) | Nationalité (turc) | Catégorie       | Français   |
+|-------------|--------------------|-----------------|------------|
+| Fransa      | Fransız            | Mot spécifique  | Français   |
+| Yunanistan  | Yunan              | Mot spécifique  | Grec       |
+| Ermenistan  | Ermeni             | Mot spécifique  | Arménien   |
+| Almanya     | Alman              | Mot spécifique  | Allemand   |
+| İspanya     | İspanyol           | Mot spécifique  | Espagnol   |
+| Rusya       | Rus                | Mot spécifique  | Russe      |
+| İngiltere   | İngiliz            | Mot spécifique  | Anglais    |
+| Macaristan  | Macar              | Mot spécifique  | Hongrois   |
+| Amerika     | Amerikalı          | Pays + suffixe  | Américain  |
+| Kanada      | Kanadalı           | Pays + suffixe  | Canadien   |
+| Çin         | Çinli              | Pays + suffixe  | Chinois    |
+| Fas         | Faslı              | Pays + suffixe  | Marocain   |
+| Suriye      | Suriyeli           | Pays + suffixe  | Syrien     |
+| Irak        | Iraklı             | Pays + suffixe  | Irakien    |
+| Mısır       | Mısırlı            | Pays + suffixe  | Égyptien   |
+| Avusturya   | Avusturyalı        | Pays + suffixe  | Autrichien |
+| İsviçre     | İsviçreli          | Pays + suffixe  | Suisse     |
+| Makedonya   | Makedonyalı        | Pays + suffixe  | Macédonien |
+| Ukrayna     | Ukraynalı          | Pays + suffixe  | Ukrainien  |
+| Polonya     | Polonyalı          | Pays + suffixe  | Polonais   |
+
+---
+
+>💡 **Astuce simple — former les nationalités avec suffixe**
+
+Quand la nationalité se forme avec un suffixe, regarde **la dernière voyelle du nom du pays** et applique l’*harmonie vocalique*.  
+👉 Si tu veux tout savoir sur ce sujet, [clique ici pour lire notre article sur l’harmonie vocalique](/harmonie_vocalique).
+
+### Règle pratique
+- **ü, ö → `-lü`**  
+  - Ürd**ü**n → **Ürdünlü** (Jordanien)  
+
+- **i, e → `-li`**  
+  - Ç**i**n → **Çinli** (Chinois)  
+  - Norv**e**ç → **Norveçli** (Norvégien)  
+  - İsv**e**ç → **İsveçli** (Suédois)  
+
+- **a, ı → `-lı`**  
+  - F**a**s → **Faslı** (Marocain)  
+  - Ir**a**k → **Iraklı** (Irakien)  
+
+- **o, u → `-lu`**  
+  - Tun**u**s → **Tunuslu** (Tunisien)  
+  - Monak**o** → **Monakolu** (Monégasque)  
+
+---
+
+✅ Retenir : la **dernière voyelle** du pays décide de la forme du suffixe `-lı / -li / -lu / -lü`.  
+
+
+<div style="width:100%; height:150vh; border-radius:12px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+  <iframe 
+    src="h5p/milletler.html" 
+    style="width:100%; height:100%; border:none;" 
+    scrolling="no" frameborder="0" allowfullscreen>
+  </iframe>
+</div>
