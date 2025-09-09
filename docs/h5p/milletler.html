@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Jeu — Devine la nationalité (turc)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css" />
+<style>
+  :root {
+    --bg: #0a192f;
+    --card: #112240;
+    --text: #e6f1ff;
+    --muted: #8892b0;
+    --accent: #64ffda;
+    --secondary: #233554;
+    --border: #1d3a6b;
+  }
+  
+  * { box-sizing: border-box; }
+  body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .card {
+    background: var(--card);
+    width: 100%;
+    max-width: 760px;
+    border-radius: 12px;
+    box-shadow: 0 6px 22px rgba(2, 12, 27, 0.7);
+    padding: 24px;
+  }
+  h1 { margin: 0 0 8px; font-size: 1.25rem; }
+  p.lead { margin: 0; color: var(--muted); }
+  .game { display: grid; grid-template-columns: 1fr 320px; gap: 16px; margin-top: 18px; }
+  @media (max-width: 720px) { .game { grid-template-columns: 1fr; } }
+  .panel { padding: 18px; border-radius: 10px; background: rgba(23, 42, 69, 0.5); border: 1px solid var(--border); }
+  .country-container { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    margin-bottom: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  .flag-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    animation: pulse 2s infinite;
+  }
+  .fi {
+    border-radius: 50%;
+    font-size: 24px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .country { font-weight: 700; font-size: 1.5rem; color: var(--accent); }
+  .hint { color: var(--muted); font-size: 0.95rem; margin-top: 6px; }
+  .controls { display: flex; gap: 8px; margin-top: 12px; }
+  input[type=text] { 
+    width: 100%; 
+    padding: 12px; 
+    border-radius: 8px; 
+    border: 1px solid var(--border); 
+    font-size: 1rem; 
+    background: var(--secondary);
+    color: var(--text);
+    transition: all 0.3s ease;
+  }
+  input[type=text]:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.2);
+  }
+  button { 
+    background: var(--accent); 
+    color: var(--bg); 
+    border: none; 
+    padding: 12px 16px; 
+    border-radius: 8px; 
+    font-weight: 600; 
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  button:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(100, 255, 218, 0.2); }
+  button.secondary { background: var(--secondary); color: var(--accent); }
+  .result { 
+    margin-top: 12px; 
+    font-weight: 700; 
+    min-height: 24px;
+    animation: slideIn 0.3s ease-out;
+  }
+  .small { font-size: 0.9rem; color: var(--muted); }
+  .score { 
+    font-size: 0.95rem; 
+    margin-top: 8px; 
+    padding: 8px 12px;
+    background: var(--secondary);
+    border-radius: 8px;
+    display: inline-block;
+  }
+  .list { max-height: 220px; overflow: auto; padding: 8px; border-radius: 8px; background: var(--secondary); border: 1px solid var(--border); }
+  .footer { margin-top: 14px; font-size: 0.9rem; color: var(--muted); }
+  .chip { display: inline-block; padding: 6px 10px; border-radius: 999px; background: var(--secondary); border: 1px solid var(--border); margin: 6px 6px 0 0; color: var(--text); }
+  .example { font-size: 0.95rem; margin-top: 10px; }
+  .correct { color: #64ffda; }
+  .wrong { color: #ff6b6b; }
+  
+  /* Turkish character helper */
+  .char-helper { 
+    display: flex; 
+    gap: 6px; 
+    margin-top: 10px; 
+    flex-wrap: wrap;
+  }
+  .char-btn {
+    background: var(--secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+  }
+  .char-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+  }
+  
+  .bounce {
+    animation: bounce 0.6s;
+  }
+  
+  .score-change {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+</style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Jeu — Devine la nationalité (turc)</h1>
+    <p class="lead">Jeu simple pour pratiquer <strong>-lı / -li / -lu / -lü</strong> et les nationalités. Donne la nationalité turque du pays affiché (écris la forme turque).</p>
+
+    <div class="game" aria-live="polite">
+      <section class="panel" aria-labelledby="country-label">
+        <div id="country-label" class="small">Pays</div>
+        <div class="country-container">
+          <div class="flag-container">
+            <span id="countryFlag" class="fi"></span>
+          </div>
+          <div class="country" id="countryName">—</div>
+        </div>
+        <div class="hint" id="hintText">Indice : regarde la dernière voyelle du pays pour choisir le suffixe.</div>
+
+        <div class="controls">
+          <input type="text" id="answerInput" placeholder="Écris la nationalité en turc (ex: Amerikalı)" autocomplete="off" aria-label="Réponse" />
+          <button id="checkBtn">Vérifier</button>
+          <button class="secondary" id="skipBtn">Passer</button>
+        </div>
+        
+        <!-- Turkish character helper -->
+        <div class="char-helper">
+          <span class="small">Caractères spéciaux: </span>
+          <button class="char-btn" data-char="ı">ı</button>
+          <button class="char-btn" data-char="ş">ş</button>
+          <button class="char-btn" data-char="ç">ç</button>
+          <button class="char-btn" data-char="ü">ü</button>
+          <button class="char-btn" data-char="ö">ö</button>
+          <button class="char-btn" data-char="ğ">ğ</button>
+          <button class="char-btn" data-char="İ">İ</button>
+          <button class="char-btn" data-char="Ş">Ş</button>
+          <button class="char-btn" data-char="Ç">Ç</button>
+          <button class="char-btn" data-char="Ü">Ü</button>
+          <button class="char-btn" data-char="Ö">Ö</button>
+          <button class="char-btn" data-char="Ğ">Ğ</button>
+        </div>
+
+        <div class="result" id="result"></div>
+        <div class="score" id="score">Score: 0 / 0</div>
+
+        <div class="example small">Exemples acceptés : <span class="chip">Fransız</span><span class="chip">Amerikalı</span><span class="chip">Çinli</span></div>
+      </section>
+
+      <aside>
+        <div class="panel">
+          <strong>Règles rapides</strong>
+          <ul class="small">
+		    <li>Il y a deux types des nationalités, n'oublie pas. Celles qui ont un mot spécifique et celle prennent un suffix après le nom du pays. </li>
+            <li>Regarde la <strong>dernière voyelle</strong> du nom du pays.</li>
+            <li>Choisis : <code>-lı / -li / -lu / -lü</code> selon la voyelle (a, ı → -lı ; e, i → -li ; o, u → -lu ; ö, ü → -lü).</li>
+          </ul>
+
+          <div style="margin-top:12px"><strong>Liste des pays (exemples)</strong></div>
+          <div class="list" id="countryList"></div>
+
+          <div style="margin-top:10px"><button id="newGame">Nouvelle série</button></div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="footer">Petit jeu éducatif — conçu pour les débutants. Tu veux ajouter d'autres pays ? Modifie la liste dans le code.</div>
+  </main>
+
+<script>
+(function(){
+  const pairs = [
+    {country: 'Fransa', nationality: 'Fransız', flag: 'fr'},
+    {country: 'Almanya', nationality: 'Alman', flag: 'de'},
+    {country: 'İspanya', nationality: 'İspanyol', flag: 'es'},
+    {country: 'İngiltere', nationality: 'İngiliz', flag: 'gb'},
+    {country: 'Amerika', nationality: 'Amerikalı', flag: 'us'},
+    {country: 'Çin', nationality: 'Çinli', flag: 'cn'},
+    {country: 'Fas', nationality: 'Faslı', flag: 'ma'},
+    {country: 'Suriye', nationality: 'Suriyeli', flag: 'sy'},
+    {country: 'Irak', nationality: 'Iraklı', flag: 'iq'},
+    {country: 'Mısır', nationality: 'Mısırlı', flag: 'eg'},
+    {country: 'Avusturya', nationality: 'Avusturyalı', flag: 'at'},
+    {country: 'İsviçre', nationality: 'İsviçreli', flag: 'ch'},
+    {country: 'Makedonya', nationality: 'Makedonyalı', flag: 'mk'},
+    {country: 'Ukrayna', nationality: 'Ukraynalı', flag: 'ua'},
+    {country: 'Polonya', nationality: 'Polonyalı', flag: 'pl'},
+    {country: 'Tunus', nationality: 'Tunuslu', flag: 'tn'},
+    {country: 'Ürdün', nationality: 'Ürdünlü', flag: 'jo'},
+    {country: 'Monako', nationality: 'Monakolu', flag: 'mc'},
+    {country: 'Norveç', nationality: 'Norveçli', flag: 'no'},
+    {country: 'İsveç', nationality: 'İsveçli', flag: 'se'}
+  ];
+
+  // utils
+  const norm = s => s.toLowerCase().trim().replace(/[\u0300-\u036f]/g,'')
+    .replace(/ı/g,'i~') // protect dotless i
+    .normalize('NFD')
+    .replace(/[^a-zA-Z0-9ğüşöçıİı~]/g,'')
+    .replace(/i~/g,'ı')
+    .replace(/ı/g,'ı')
+    .replace(/ç/g,'c').replace(/ş/g,'s').replace(/ö/g,'o').replace(/ü/g,'u').replace(/ğ/g,'g')
+    ;
+
+  const getLastVowel = w => {
+    const vowels = ['a','e','ı','i','o','u','ö','ü','A','E','I','İ','O','U','Ö','Ü'];
+    for(let i=w.length-1;i>=0;i--){ if(vowels.includes(w[i])) return w[i]; }
+    return '';
+  };
+
+  const countryNameEl = document.getElementById('countryName');
+  const countryFlagEl = document.getElementById('countryFlag');
+  const answerInput = document.getElementById('answerInput');
+  const checkBtn = document.getElementById('checkBtn');
+  const skipBtn = document.getElementById('skipBtn');
+  const resultEl = document.getElementById('result');
+  const scoreEl = document.getElementById('score');
+  const countryListEl = document.getElementById('countryList');
+  const hintText = document.getElementById('hintText');
+  const newGameBtn = document.getElementById('newGame');
+  const charButtons = document.querySelectorAll('.char-btn');
+  const flagContainer = document.querySelector('.flag-container');
+
+  let order = [];
+  let index = 0;
+  let correct = 0;
+  let total = 0;
+  let timeoutId = null;
+
+  function buildList(){
+    countryListEl.innerHTML = '';
+    pairs.forEach(p=>{
+      const div = document.createElement('div');
+      div.innerHTML = `<span class="fi fi-${p.flag}"></span> ${p.country} → ${p.nationality}`;
+      countryListEl.appendChild(div);
+    });
+  }
+
+  function shuffle(){ 
+    order = pairs.map((_,i)=>i).sort(()=>Math.random()-0.5); 
+    index=0; 
+    correct=0; 
+    total=0; 
+    updateScore(); 
+  }
+  
+  function updateScore(){ 
+    scoreEl.textContent = `Score: ${correct} / ${total}`;
+    scoreEl.classList.add('score-change');
+    setTimeout(() => scoreEl.classList.remove('score-change'), 500);
+  }
+
+  function showCountry(){
+    const current = pairs[order[index]];
+    countryNameEl.textContent = current.country;
+    
+    // Set the flag with animation
+    countryFlagEl.className = `fi fi-${current.flag}`;
+    flagContainer.classList.add('pulse');
+    
+    hintText.textContent = 'Indice : dernière voyelle = ' + getLastVowel(current.country);
+    answerInput.value = '';
+    resultEl.textContent = '';
+    answerInput.focus();
+    
+    // Add animation to the country container
+    const countryContainer = document.querySelector('.country-container');
+    countryContainer.style.animation = 'none';
+    setTimeout(() => {
+      countryContainer.style.animation = 'fadeIn 0.5s ease-in-out';
+    }, 10);
+  }
+
+  function check(){
+    const current = pairs[order[index]];
+    const answer = answerInput.value || '';
+    if(!answer.trim()) return;
+    total++;
+    
+    // Clear any existing timeout
+    if (timeoutId) clearTimeout(timeoutId);
+    
+    // normalization to accept many variants
+    const aNorm = norm(answer);
+    const eNorm = norm(current.nationality);
+    
+    if(aNorm === eNorm){ 
+      correct++; 
+      resultEl.innerHTML = '<span class="correct">✅ Correct — '+current.nationality+'</span>'; 
+      // Add bounce animation to flag on correct answer
+      flagContainer.classList.add('bounce');
+      setTimeout(() => flagContainer.classList.remove('bounce'), 600);
+    } else { 
+      resultEl.innerHTML = '<span class="wrong">❌ Faux — réponse attendue: '+current.nationality+'</span>'; 
+    }
+    
+    updateScore();
+    
+    // Set timeout for 3 seconds (3000ms) instead of 900ms
+    timeoutId = setTimeout(()=>{ 
+      nextCountry();
+    }, 3000);
+  }
+
+  function skip(){
+    const current = pairs[order[index]];
+    total++;
+    
+    // Clear any existing timeout
+    if (timeoutId) clearTimeout(timeoutId);
+    
+    resultEl.innerHTML = '<span class="wrong">⏭ Passé — réponse: '+current.nationality+'</span>'; 
+    updateScore(); 
+    
+    // Set timeout for 3 seconds (3000ms) instead of 900ms
+    timeoutId = setTimeout(()=>{ 
+      nextCountry();
+    }, 1500);
+  }
+
+  function nextCountry() {
+    index++; 
+    if(index >= order.length) { 
+      resultEl.innerHTML += '<div class="small" style="margin-top:8px">Fin de la série — clique "Nouvelle série" pour rejouer.</div>'; 
+    } else { 
+      showCountry(); 
+    }
+  }
+
+  // Add Turkish character buttons functionality
+  charButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const char = btn.getAttribute('data-char');
+      const startPos = answerInput.selectionStart;
+      const endPos = answerInput.selectionEnd;
+      const currentValue = answerInput.value;
+      
+      answerInput.value = currentValue.substring(0, startPos) + char + currentValue.substring(endPos);
+      answerInput.focus();
+      answerInput.selectionStart = startPos + char.length;
+      answerInput.selectionEnd = startPos + char.length;
+    });
+  });
+
+  checkBtn.addEventListener('click', check);
+  answerInput.addEventListener('keydown', e => { if(e.key === 'Enter') check(); });
+  skipBtn.addEventListener('click', skip);
+  newGameBtn.addEventListener('click', () => { 
+    if (timeoutId) clearTimeout(timeoutId);
+    shuffle(); 
+    showCountry(); 
+  });
+
+  // init
+  buildList(); 
+  shuffle(); 
+  showCountry();
+})();
+</script>
+</body>
+</html>
