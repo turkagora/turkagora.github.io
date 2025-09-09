@@ -334,7 +334,6 @@
     hintText.textContent = 'Indice : dernière voyelle = ' + getLastVowel(current.country);
     answerInput.value = '';
     resultEl.textContent = '';
-    answerInput.focus();
     
     // Add animation to the country container
     const countryContainer = document.querySelector('.country-container');
@@ -409,7 +408,6 @@
       const currentValue = answerInput.value;
       
       answerInput.value = currentValue.substring(0, startPos) + char + currentValue.substring(endPos);
-      answerInput.focus();
       answerInput.selectionStart = startPos + char.length;
       answerInput.selectionEnd = startPos + char.length;
     });
@@ -431,4 +429,5 @@
 })();
 </script>
 </body>
+
 </html>
