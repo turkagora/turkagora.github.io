@@ -41,7 +41,7 @@ Pour l’instant, amusons-nous à deviner quelques nationalités. 👇
 
 > En turc, il y a deux façons de former une nationalité :
 
-###1. Avec un mot spécial (adjectif)
+### Avec un mot spécial (adjectif)
 
 Certains pays ont un mot spécifique pour dire la nationalité comme on vient de voir au-dessus aussi:
 
@@ -53,7 +53,7 @@ Almanya → Alman (Allemand)
 
 Ici, il n'y a pas de règle spécifique mais il y a un mot spécial pour chacune des nationalités.
 
-###2. Avec le nom du pays + un suffixe
+### Avec le nom du pays + un suffixe
 
 Pour beaucoup d’autres pays, on prend simplement le nom du pays et on ajoute un suffixe (généralement -lı / -li / -lu / -lü selon l’harmonie vocalique) :
 
