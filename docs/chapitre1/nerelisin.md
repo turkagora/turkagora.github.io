@@ -29,29 +29,20 @@ Vous avez sûrement reconnu certaines nationalités dans ces mots – mais alors
 
 Et bien, c’est tout simplement la façon de dire « Je suis » en turc !
 
-C’est un peu comme en anglais : on dit *__« I'm »__*, avec juste deux lettres, n’est-ce pas ?
-En turc, c’est pareil : **on ajoute aussi deux petites lettres.**
-
 Sans rentrer tout de suite dans les détails, on va d’abord essayer de vous faire sentir comment ces suffixes fonctionnent. On expliquera la grammaire plus en détail dans le prochain cours.
 
-Pour l’instant, amusons-nous à deviner quelques nationalités. 👇
+### Pour l’instant, amusons-nous à deviner quelques nationalités. 👇
 **Écrivez-les au masculin car en turc, il n’y a pas de distinction de genre, tout est neutre.**
 <iframe src="h5p/nationalites.html" style="width: 100%; height: 900px; border: none; display: block;" scrolling="no" frameborder="0" allowfullscreen ></iframe>
 
 
-> En turc, il y a deux façons de former une nationalité :
+> ## En turc, il y a deux façons de former une nationalité :
 
 ### Avec un mot spécial (adjectif)
 
 Certains pays ont un mot spécifique pour dire la nationalité comme on vient de voir au-dessus aussi:
 
-Fransa → Fransız (Français)
-
-Almanya → Alman (Allemand)
-
-İspanya → İspanyol (Espagnol)
-
-Ici, il n'y a pas de règle spécifique mais il y a un mot spécial pour chacune des nationalités.
+*Par exemple*: **Fransız** (Français), **Alman** (Allemand) etc.
 
 ### Avec le nom du pays + un suffixe
 
@@ -75,32 +66,32 @@ Ukrayna → Ukraynalı (Ukrainien)
 
 Deux catégories : **mot spécifique** (adjectif qui change) ou **pays + suffixe** (`-lı/-li/-lu/-lü`).
 
-| Pays (turc) | Nationalité (turc) | Catégorie       | Français   |
-|-------------|--------------------|-----------------|------------|
-| Fransa      | Fransız            | Mot spécifique  | Français   |
-| Yunanistan  | Yunan              | Mot spécifique  | Grec       |
-| Ermenistan  | Ermeni             | Mot spécifique  | Arménien   |
-| Almanya     | Alman              | Mot spécifique  | Allemand   |
-| İspanya     | İspanyol           | Mot spécifique  | Espagnol   |
-| Rusya       | Rus                | Mot spécifique  | Russe      |
-| İngiltere   | İngiliz            | Mot spécifique  | Anglais    |
-| Macaristan  | Macar              | Mot spécifique  | Hongrois   |
-| Amerika     | Amerikalı          | Pays + suffixe  | Américain  |
-| Kanada      | Kanadalı           | Pays + suffixe  | Canadien   |
-| Çin         | Çinli              | Pays + suffixe  | Chinois    |
-| Fas         | Faslı              | Pays + suffixe  | Marocain   |
-| Suriye      | Suriyeli           | Pays + suffixe  | Syrien     |
-| Irak        | Iraklı             | Pays + suffixe  | Irakien    |
-| Mısır       | Mısırlı            | Pays + suffixe  | Égyptien   |
-| Avusturya   | Avusturyalı        | Pays + suffixe  | Autrichien |
-| İsviçre     | İsviçreli          | Pays + suffixe  | Suisse     |
-| Makedonya   | Makedonyalı        | Pays + suffixe  | Macédonien |
-| Ukrayna     | Ukraynalı          | Pays + suffixe  | Ukrainien  |
-| Polonya     | Polonyalı          | Pays + suffixe  | Polonais   |
+| Pays (turc) | Nationalité (turc) | Catégorie | Français |
+| :---------- | :----------------- | :-------- | :------- |
+| <span style="color:#4FC3F7">Fransa</span> | <span style="color:#4FC3F7">Fransız</span> | <span style="color:#BA68C8">Mot spécifique</span> | <span style="color:#AED581">Français</span> |
+| <span style="color:#4FC3F7">Yunanistan</span> | <span style="color:#4FC3F7">Yunan</span> | <span style="color:#BA68C8">Mot spécifique</span> | <span style="color:#AED581">Grec</span> |
+| <span style="color:#4FC3F7">Ermenistan</span> | <span style="color:#4FC3F7">Ermeni</span> | <span style="color:#BA68C8">Mot spécifique</span> | <span style="color:#AED581">Arménien</span> |
+| <span style="color:#4FC3F7">Almanya</span> | <span style="color:#4FC3F7">Alman</span> | <span style="color:#BA68C8">Mot spécifique</span> | <span style="color:#AED581">Allemand</span> |
+| <span style="color:#4FC3F7">İspanya</span> | <span style="color:#4FC3F7">İspanyol</span> | <span style="color:#BA68C8">Mot spécifique</span> | <span style="color:#AED581">Espagnol</span> |
+| <span style="color:#4FC3F7">Rusya</span> | <span style="color:#4FC3F7">Rus</span> | <span style="color:#BA68C8">Mot spécifique</span> | <span style="color:#AED581">Russe</span> |
+| <span style="color:#4FC3F7">İngiltere</span> | <span style="color:#4FC3F7">İngiliz</span> | <span style="color:#BA68C8">Mot spécifique</span> | <span style="color:#AED581">Anglais</span> |
+| <span style="color:#4FC3F7">Macaristan</span> | <span style="color:#4FC3F7">Macar</span> | <span style="color:#BA68C8">Mot spécifique</span> | <span style="color:#AED581">Hongrois</span> |
+| <span style="color:#4FC3F7">Amerika</span> | <span style="color:#4FC3F7">Amerikalı</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Américain</span> |
+| <span style="color:#4FC3F7">Kanada</span> | <span style="color:#4FC3F7">Kanadalı</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Canadien</span> |
+| <span style="color:#4FC3F7">Çin</span> | <span style="color:#4FC3F7">Çinli</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Chinois</span> |
+| <span style="color:#4FC3F7">Fas</span> | <span style="color:#4FC3F7">Faslı</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Marocain</span> |
+| <span style="color:#4FC3F7">Suriye</span> | <span style="color:#4FC3F7">Suriyeli</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Syrien</span> |
+| <span style="color:#4FC3F7">Irak</span> | <span style="color:#4FC3F7">Iraklı</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Irakien</span> |
+| <span style="color:#4FC3F7">Mısır</span> | <span style="color:#4FC3F7">Mısırlı</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Égyptien</span> |
+| <span style="color:#4FC3F7">Avusturya</span> | <span style="color:#4FC3F7">Avusturyalı</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Autrichien</span> |
+| <span style="color:#4FC3F7">İsviçre</span> | <span style="color:#4FC3F7">İsviçreli</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Suisse</span> |
+| <span style="color:#4FC3F7">Makedonya</span> | <span style="color:#4FC3F7">Makedonyalı</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Macédonien</span> |
+| <span style="color:#4FC3F7">Ukrayna</span> | <span style="color:#4FC3F7">Ukraynalı</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Ukrainien</span> |
+| <span style="color:#4FC3F7">Polonya</span> | <span style="color:#4FC3F7">Polonyalı</span> | <span style="color:#BA68C8">Pays + suffixe</span> | <span style="color:#AED581">Polonais</span> |
 
 ---
 
->💡 **Astuce simple — former les nationalités avec suffixe**
+>💡 **Astuce simple pour former les nationalités avec suffixe**
 
 Quand la nationalité se forme avec un suffixe, regarde **la dernière voyelle du nom du pays** et applique l’*harmonie vocalique*.  
 👉 Si tu veux tout savoir sur ce sujet, [clique ici pour lire notre article sur l’harmonie vocalique](/harmonie_vocalique).
@@ -124,7 +115,7 @@ Quand la nationalité se forme avec un suffixe, regarde **la dernière voyelle d
 
 ---
 
-✅ Retenir : la **dernière voyelle** du pays décide de la forme du suffixe `-lı / -li / -lu / -lü`.  
+### Temps de pratiquer votre connaissance! 
 
 
 <div style="width:100%; height:150vh; border-radius:12px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
