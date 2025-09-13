@@ -20,13 +20,10 @@ Commençons par l'alpabet turc. Dans notre alphabet (alfabe) il se trouve **29 l
 - **Une lettre = un son**  
   En turc, chaque lettre correspond toujours au même son, sans exception. Contrairement au français, il n’y a pas de lettres muettes ni de combinaisons compliquées.  
   Exemple : *okul* → toujours *o-koul*.  
-  <button onclick="(()=>{let u=new SpeechSynthesisUtterance('okul');u.lang='tr-TR';speechSynthesis.speak(u);})()">Écouter</button>  
-
 ---
 
 - **Accent tonique** : en général, il tombe sur la **dernière syllabe**.  
   Exemple : *kitap* (livre) → ki-**tap**, *yaprak* (feuille) → yap-**rak**  
-  <button onclick="(()=>{let u=new SpeechSynthesisUtterance('kitap');u.lang='tr-TR';speechSynthesis.speak(u);})()">Écouter</button>  
 
 👉 Attention : il existe des exceptions (certains noms propres ou mots d’origine étrangère). Mais la règle la plus fréquente est bien : accent sur la dernière syllabe.  
 
@@ -34,7 +31,6 @@ Commençons par l'alpabet turc. Dans notre alphabet (alfabe) il se trouve **29 l
 
 - **La lettre Ğ (yumuşak g)** : elle est muette mais elle a quand même un rôle : elle allonge la voyelle précédente.  
   Exemple : *dağ* (montagne) → prononcé *daa*, *yağmur* (pluie) → prononcé *yaamur*, *düğün* (mariage/noce) → prononcé *düün*.  
-  <button onclick="(()=>{let u=new SpeechSynthesisUtterance('dağ');u.lang='tr-TR';speechSynthesis.speak(u);})()">Écouter</button>  
 
 👉 On peut voir Ğ comme un **signe d’allongement vocalique**.  
 
