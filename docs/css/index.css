@@ -1,7 +1,7 @@
 /* Dark mode variables */
 .dark-mode {
---text-color: #e0e0e0;        /* default text */
---text-strong: #ffffff;       /* bold/strong for clarity */
+--text-color: #777;        /* default text */
+--text-strong: #888;       /* bold/strong for clarity */
 --heading-color: #f5f5f5;     /* H1 main headings */
 --heading-secondary: #e3f2fd; /* H2–H3 softer bluish-white */
 --heading-muted: #b0bec5;     /* H4–H6 muted gray-blue */
