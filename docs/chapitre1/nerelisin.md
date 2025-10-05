@@ -125,3 +125,37 @@ Quand la nationalité se forme avec un suffixe, regarde **la dernière voyelle d
     scrolling="no" frameborder="0" allowfullscreen>
   </iframe>
 </div>
+
+#### Maintenant il est temps d'apprendre comment on utilise le suffix qui sert à dire "je suis".
+
+Comme évoqué en haut, le verbe « être » au présent en turc ne se conjugue pas avec un mot séparé comme en français (je suis), mais il s'attache à la fin du nom (ou de l'adjectif) sous forme de suffixe.
+
+C'est pour cela que :
+
+> Nationalité seule : **Türk**  
+> Devient → **Türküm** = *Je suis turc*
+
+## 🧩 Les suffixes de la 1ʳᵉ personne du singulier
+
+Pour dire **« je suis »**, on utilise un suffixe qui **varie en fonction de la dernière voyelle** du mot (selon l’[harmonie vocalique](#)) :
+
+# Dernière voyelle  
+**Suffixe « je suis »**  
+
+| **Voyelle** | **Suffixe** | **Exemple** | **Traduction** |
+|---------|---------|---------|------------|
+| **a** ou **ı** | **-ım** | **Fransız → Fransızım** | **Je suis Français** |
+| **e** ou **i** | **-im** | **İngiliz → İngilizim** | **Je suis Anglais** |
+| **o** ou **u** | **-um** | **Rus → Rusum** | **Je suis Russe** |
+| **ö** ou **ü** | **-üm** | **Türk → Türküm** | **Je suis Turc** |
+
+
+## ⚠️ Cas particulier : mots finissant par une voyelle
+
+Quand le mot se termine **déjà par une voyelle**, on insère la lettre **« y »** entre le mot et le suffixe pour **faciliter la prononciation**.
+
+| **Mot (nationalité)** | **Suffixe** | **Devient...** | **Traduction** |
+|---------------------------|--------------------------------|-------------------------------------------|-----------------------------------------|
+| Kanadalı | -ım | Kanadalıyım | Je suis Canadien |
+| Suriyeli | -im | Suriyeliyim | Je suis Syrien |
+| Ermeni | -im | Ermeniyim | Je suis Arménien |
