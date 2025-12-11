@@ -11,10 +11,10 @@ Imagine un train :
 
 Exemples concrets :
 
-- **ev** → ma maison (juste la locomotive)
-- **evler** → des maisons (on a ajouté le wagon **-ler** pour le pluriel)
-- **evlerim** → mes maisons (wagon **-ler** + wagon **-im** pour “mes”)
-- **evlerimde** → dans mes maisons (wagon **-ler** + wagon **-im** + wagon **-de** pour “dans”)
+- **arkadaş** → ami (juste la locomotive)
+- **arkadaşlar** → des amis (on a ajouté le wagon **-lar** pour le pluriel)
+- **arkadaşlarım** → mes amis (wagon **-lar** + wagon **-ım** pour “mon/mes”)
+- **arkadaşlarımla** → avec mes amis (wagon **-lar** + wagon **-ım** + wagon **-la** pour “avec”)
 
 ---
 
@@ -82,13 +82,13 @@ On ne les apprend pas encore, on regarde juste le principe :
 
 > Par exemple: 
 
-> ev (maison)
-> evler (les maisions)
-> evlerde (dans les maisons)
+- ev (maison)
+- evler (les maisions)
+- evlerde (dans les maisons)
 
-> araba (voiture)
-> arabalar (les voitures)
-> arabalarda (dans les voitures.
+- araba (voiture)
+- arabalar (les voitures)
+- arabalarda (dans les voitures)
 
 ---
 
