@@ -1,77 +1,113 @@
 # L’harmonie vocalique en turc (explication simple)
 
-Quand on apprend le turc, on rencontre très vite les **suffixes**.  
-Exemple : pluriel, possessif, etc.  
-👉 Mais attention : en turc, un suffixe **change de forme** selon le mot auquel on l’ajoute.  
-C’est la règle de l’**harmonie vocalique**.
+En turc, on part d’un mot simple (par exemple : **ev** “maison”, **okul** “école”, **arkadaş** “ami”) et on lui ajoute des petits éléments à la fin pour ajouter du sens : nombre, personne, temps, lieu, etc.  
+Ces petits éléments qui se collent au mot s’appellent des **suffixes**, et ils sont au cœur du fonctionnement de la langue turque.
+
+Imagine un train :
+
+- La **locomotive**, c’est le mot de base (par exemple **ev** = “maison”).
+- Les **wagons** qui s’accrochent derrière, ce sont les suffixes (pluriel, “mes”, “dans”, etc.).
+- Le train reste un seul bloc, mais il s’allonge à chaque wagon.
+
+Exemples concrets :
+
+- **ev** → ma maison (juste la locomotive)
+- **evler** → des maisons (on a ajouté le wagon **-ler** pour le pluriel)
+- **evlerim** → mes maisons (wagon **-ler** + wagon **-im** pour “mes”)
+- **evlerimde** → dans mes maisons (wagon **-ler** + wagon **-im** + wagon **-de** pour “dans”)
 
 ---
 
-## 1. L’idée de base
-En turc, la **dernière voyelle** d’un mot décide de la forme du suffixe.  
-C’est tout ! Pas besoin de théorie compliquée au début.
+## 2. La règle de base : on regarde la dernière voyelle
+
+En turc, c’est **la dernière voyelle du mot** qui décide de la forme du suffixe.
+
+Le réflexe à avoir sera toujours le même :
+
+1. Je regarde la dernière voyelle du mot.
+2. Cette voyelle me dit **quelle version du suffixe** je dois utiliser.
+
+Dans les chapitres suivants, chaque suffixe sera présenté avec plusieurs versions (par exemple une version avec **a** et une version avec **e**), et on indiquera toujours :
+
+> Si la dernière voyelle est dans tel groupe → on choisit cette forme.
 
 ---
 
-## 2. Deux familles de suffixes
-👉 La règle :  
-- Si la dernière voyelle est **postérieure (a, ı, o, u)** → on choisit **a**  
-- Si la dernière voyelle est **antérieure (e, i, ö, ü)** → on choisit **e**  
+## 3. Deux groupes de voyelles pour toute la suite
+
+Le turc a 8 voyelles : **a, e, ı, i, o, ö, u, ü**.
+
+Pour simplifier, on les range en **deux groupes** qui reviendront partout dans ton apprentissage :
+
+- **Groupe 1** : a, ı, o, u  
+- **Groupe 2** : e, i, ö, ü  
+
+## 4. Types de suffixes en turc
+
+Les suffixes en turc suivent l’harmonie vocalique et se répartissent en deux grands types.
+
+### Type 1 : suffixes en a / e
+
+Ce sont les suffixes dont la voyelle est **a** ou **e**, et qui n’ont pas d’autres versions avec d'autres voyelles.
+
+- **-lar, -ler** : suffixe de pluriel  
+  - Il existe seulement sous ces deux formes, **-lar** et **-ler**.  
+  - Il n’existe pas de variantes comme *-lur, -lür, -lir*, etc.
+
+### Type 2 : suffixes en ı / i / u / ü
+
+Ce sont les suffixes qui existent en **quatre versions**, avec une voyelle parmi **ı, i, u, ü**, et qui n’ont pas de forme avec a ou e.  
+Par exemple :
+
+- **-ım, -im, -um, -üm** : utilisé, entre autres, pour exprimer “je suis” ou “mon/ma/mes” selon le contexte.  
+  - Ce suffixe n’a pas de version en **a** ou **e**.  
+  - Il apparaît uniquement sous ces quatre formes : **-ım, -im, -um, -üm**.
+
+En pratique, chaque suffixe appartiendra donc soit au **Type 1** (en *a/e*), soit au **Type 2** (en *ı/i/u/ü*).
+
+Et c’est toujours **la dernière voyelle du mot** qui choisira le groupe.
 ---
 
-## 3. Exemples simples
+## 5. Un exemple de mécanisme (sans entrer dans les détails)
 
-### 🔹 Pluriel (Type A : `-lar / -ler`)
+Imaginons un suffixe qui existe en deux versions :
 
-On utilise **a / e** → donc **Type A**.  
-👉 La dernière voyelle du mot est déterminante.
+- une avec **a**  
+- une avec **e**
 
-- **ev** (maison) → **evler**  
-  _(la dernière voyelle est **e** → voyelle antérieure → on choisit `-ler`)_  
+On ne les apprend pas encore, on regarde juste le principe :
 
-- **kapı** (porte) → **kapılar**  
-  _(la dernière voyelle est **ı** → voyelle postérieure → on choisit `-lar`)_  
+- Si la dernière voyelle du mot est **a, ı, o ou u** (groupe 1) → le suffixe prendra la forme avec **a**.
+- Si la dernière voyelle est **e, i, ö ou ü** (groupe 2) → le suffixe prendra la forme avec **e**.
 
-### 🔸 Possessif (Type B : `-ım / -im / -um / -üm`)
+> Par exemple: 
 
-On utilise **ı, i, u, ü** → donc **Type B**.  
-👉 La voyelle du suffixe s’accorde avec la **dernière voyelle du mot**.
+> ev (maison)
+> evler (les maisions)
+> evlerde (dans les maisons)
 
-- **evim** → ma maison  
-  _(dernière voyelle = **e**, voyelle antérieure fermée → on prend `-im`)_  
-
-- **evin** → ta maison  
-  _(même logique : **e** → `-in`)_  
-
-- **kızımız** → notre fille  
-  _(dernière voyelle = **ı**, voyelle postérieure → on prend `-ımız`)_  
-
-- **kızınız** → votre fille  
-  _(même logique : **ı** → `-ınız`)_  
-
-- **düşü** → son rêve  
-  _(dernière voyelle = **ü**, voyelle antérieure arrondie → on prend `-ü`)_  
-
-- **düşümüz** → notre rêve  
-  _(même logique : **ü** → `-ümüz`)_  
-
-- **okulum** → mon école  
-  _(dernière voyelle = **u**, voyelle postérieure arrondie → on prend `-um`)_  
-
-- **okulu** → son école  
-  _(même logique : **u** → `-u`)_  
+> araba (voiture)
+> arabalar (les voitures)
+> arabalarda (dans les voitures.
 
 ---
 
-## 4. Autres suffixes fréquents
-- **-da, -de** → locatif (“dans, à”)  
-- **-sız, -siz, suz, süz** → privatif (“sans”)
-- **-lı, li, lu, lü** → sert à former des adjectifs à partir d’un nom souvent pour dire “qui a” ou “originaire de / venant de”. 
-- et il y a plein d'autres suffixes qu'on évoquera plus tard.
-👉 Même principe : on regarde la dernière voyelle du mot.  
+## 5. Ce qu’il faut retenir avant les chapitres sur les suffixes
 
----
+À ce stade, tu n’as besoin de retenir que quelques idées très simples :
 
-## 5. Astuce pour progresser
-Quand tu apprends un suffixe, note-le tout de suite avec son **type (A ou B)**.  
-Petit à petit, ton oreille saura automatiquement quelle forme utiliser.  
+- Le turc ajoute beaucoup d’informations avec des suffixes collés à la fin des mots.
+- Un même suffixe peut avoir plusieurs formes, selon la voyelle qu’il contient.
+- C’est **la dernière voyelle du mot** qui décide la forme du suffixe.
+- Les voyelles sont rangées en deux groupes qui reviendront tout le temps :  
+  - Groupe 1 : **a, ı, o, u**  
+  - Groupe 2 : **e, i, ö, ü**
+
+Dans les prochains chapitres, chaque nouveau suffixe sera expliqué avec :
+
+- ses différentes versions,
+- une consigne claire du type :
+
+> Si la dernière voyelle du mot est dans le groupe 1, utilise cette version.  
+> Si elle est dans le groupe 2, utilise celle‑là.
+
