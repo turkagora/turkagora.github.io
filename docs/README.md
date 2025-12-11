@@ -1,7 +1,7 @@
 # Turkofil
 
 Turkofil, c’est ton coin pour kiffer le turc sans te prendre la tête.  
-Le nom vient de “turcophile” (quelqu’un qui adore tout ce qui est turc), mais on l’a raccourci et twisté pour faire quelque chose de simple, moderne et facile à retenir : **Turkofil**.[web:47][web:53]  
+Le nom vient de “turcophile” (quelqu’un qui adore tout ce qui est turc), mais on l’a raccourci et twisté pour faire quelque chose de simple, moderne et facile à retenir : **Turkofil**
 
 ---
 
